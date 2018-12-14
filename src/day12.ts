@@ -57,8 +57,8 @@ class Day12 {
             if (cycle+1 === 20) console.log(`part1 - ${newPoints}`);
 
             if (newPoints - points === step && cycle > 100) {
-                let billions: number = (50000000000 - cycle+1) * step + newPoints;
-                console.log(`(50000000000 - ${cycle}+1) * ${step} + ${newPoints};`);
+                let billions: number = (50000000000 - cycle-1) * step + newPoints;
+                console.log(`(50000000000 - ${cycle}-1) * ${step} + ${newPoints};`);
                 console.log(`part2 - ${billions}`);
                 break;
             } else {
